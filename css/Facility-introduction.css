@@ -1,0 +1,92 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    background-color: #c8e7ff;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* ========================= */
+/* ==========body=========== */
+/* ========================= */
+.body {
+    background-image: url(../img/bg-img.png);
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding-top: 10%;
+}
+
+.secssion {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding: 2%;
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+
+}
+
+.secssion1 h1 {
+    vertical-align: bottom;
+    text-align: center;
+
+}
+
+.secssion2 p {
+    line-height: 4;
+}
+
+.concept {
+    text-align: center;
+    padding: 30px;
+}
+
+.concept h1 {
+    letter-spacing: 10px;
+}
+
+.room h2,
+a {
+    text-align: center;
+}
+
+.detail {
+    width: 150px;
+    height: 40px;
+    background-color: gainsboro;
+    text-align: center;
+    border-radius: 40px;
+    display: table;
+    margin: 80px auto;
+}
+.border{
+    width: 100%;
+    height: 10px;
+    border-bottom: black solid 5px;
+}
+
+a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ptagu {
+    border-bottom: solid black;
+    width: 70%;
+    margin: auto;
+    padding-top: 7%;
+}
+
+h2 {
+    width: 50%;
+    margin: 40%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
