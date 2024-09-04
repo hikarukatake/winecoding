@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.room-info h2{
+    text-align: center;
+}
+
+.price{
+    width: 50%;
+    margin: 0 auto;
+    border: solid 1px black;
+}
+
+.price h3{
+    margin: 30px;
+    text-align: center;
+}
+
+.price p{
+    margin: 5px;
+}
+
+.price span{
+    padding-left: 70px;
+}
+
+.price ul{
+    padding: 10px 50px 10px 50px;
+}
+
+.price li{
+    list-style: none;
+}
+

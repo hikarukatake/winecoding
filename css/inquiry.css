@@ -1,0 +1,167 @@
+.Form {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+
+
+.Form-Item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+}
+
+.Form-Item-Label {
+    width: 30%;
+    max-width: 250px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1071BC;
+    padding-left: 10%;
+}
+
+.mail {
+    padding-left: 14%;
+}
+
+.box {
+    padding-left: 16%;
+}
+
+.Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 60%;
+    background: #eaedf2;
+    font-size: 18px;
+    background-color: #C3D8E8;
+    border: #1071BC solid;
+}
+
+
+.Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 60%;
+    background: #eaedf2;
+    font-size: 18px;
+    background-color: #C3D8E8;
+    border: #1071BC solid;
+}
+
+
+.Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #C3D8E8;
+    color: #1071BC;
+    font-weight: bold;
+    font-size: 20px;
+    border: #1071BC solid;
+}
+
+
+.img {
+    width: 100%;
+}
+
+.breadcrumb-001 {
+    display: flex;
+    gap: 0 22px;
+    list-style: none;
+    padding: 0;
+    font-size: .9em;
+}
+
+.breadcrumb-001 li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-001 li:not(:last-child)::after {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: .3em;
+    height: .3em;
+    margin-left: 10px;
+    border-top: 1px solid #383838;
+    border-right: 1px solid #383838;
+    content: '';
+}
+
+.breadcrumb-001 a {
+    color: #3d18c3;
+    text-decoration: none;
+}
+
+.breadcrumb-001 {
+    margin: 10px 30px 10px 30px;
+}
+
+.border {
+    font-size: 23px;
+    margin-top: 15%;
+    margin-left: 10%;
+    display: flex;
+}
+
+h1 {
+    border-left: 20px solid #FFA53C;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.Form {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.white {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #C3D8E8;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
