@@ -16,10 +16,6 @@
 }
 
 
-.Form-Item:nth-child(5) {
-    border-bottom: 1px solid #ddd;
-}
-
 .Form-Item-Label {
     width: 30%;
     max-width: 250px;
