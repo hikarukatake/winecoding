@@ -13,13 +13,13 @@ body {
 /* ============================== */
 
 header {
-  width: 100%;
-  padding: 10px 0;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #c8e7ff;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #c8e7ff;
 }
 
 .header {
@@ -55,6 +55,48 @@ a {
   font-size: 18px;
   margin-right: 5vw;
 }
+.gnavi__list {
+  width: 10vw;
+  height: 50px;
+  background-color: #c8e7ff;
+  position: relative;
+  transition: all .3s;
+}
+.gnavi__list:hover {
+  background-color: #0071BB;
+}
+.gnavi__list:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s;
+}
+.gnavi__list:hover::before {
+  background-color: #0071BB;
+}
+.gnavi__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; 
+  text-decoration: none;
+  color: #1b4059;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: all .3s;
+}
+.gnavi__list:hover a {
+  color: #fff;
+}
+
+
+/* ドロップダウンについて */
 
 .out-info {
   margin: 20vw 0 5vw 0;
@@ -126,6 +168,49 @@ a {
 .gnavi__list:hover .dropdown__lists {
   transform: scaleY(1);/*Gナビメニューにホバーしたら表示*/
 }
+
+.gnavi__list:hover .dropdown__lists {
+  display: block;
+}
+.dropdown__list {
+  background-color: #004d80;
+  height: 60px;
+  transition: all .3s;
+  position: relative;
+}
+.dropdown__list:not(:first-child)::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #3492d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dropdown__list:hover {
+  background-color: #003558;
+}
+.dropdown__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.dropdown__list a::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(135deg);
+  position: absolute; 
+  right: 15px;
+  top: calc(50% - 5px);
+}
+
 
 .gnavi__list:hover .dropdown__lists {
   display: block;
