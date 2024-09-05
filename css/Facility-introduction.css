@@ -1,6 +1,7 @@
 .slide{
-    width: 100%;
+    /* width: 100%; */
     height: 650px;
+    margin: 8vw 5vw;
 }
 .slide img{
     width: 100%;
@@ -20,7 +21,7 @@ body{
 }
 
 .secssion{
-    -ms-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   padding: 30px;
   display: flex;
