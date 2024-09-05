@@ -1,61 +1,56 @@
-.slide {
+.slide{
     width: 100%;
-    height: 100%;
-    background-color: #c8e7ff;
+    height: 650px;
 }
-
-.slide img {
+.slide img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-
 /* ========================= */
 /* ==========body=========== */
 /* ========================= */
-.body {
+body{
     background-image: url(../img/bg-img.png);
     background-repeat: no-repeat;
-    height: 1000px;
-    padding-top: 10%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.secssion {
+.secssion{
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    padding: 2%;
-    display: flex;
-    width: 55%;
-    margin: 0 auto;
+  writing-mode: vertical-rl;
+  padding: 30px;
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
 
 }
 
-.secssion1 h1 {
+.secssion1 h1{
     vertical-align: bottom;
     text-align: center;
-
 }
-
-.secssion2 p {
+.secssion2 p{
     line-height: 4;
 }
 
-.concept {
+.concept{
     text-align: center;
     padding: 30px;
 }
 
-.concept h1 {
+.concept h1{
     letter-spacing: 10px;
 }
 
-.room h2,
-a {
+.room h2, a{
     text-align: center;
 }
 
-.detail {
+.detail{
     width: 150px;
     height: 40px;
     background-color: gainsboro;
@@ -64,29 +59,8 @@ a {
     display: table;
     margin: 80px auto;
 }
-.border{
-    width: 100%;
-    height: 10px;
-    border-bottom: black solid 5px;
-}
-
-a {
+a{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-}
-
-.ptagu {
-    border-bottom: solid black;
-    width: 70%;
-    margin: auto;
-    padding-top: 7%;
-}
-
-h2 {
-    width: 50%;
-    margin: 40%;
-    height: 400px;
-    display: flex;
-    align-items: center;
 }

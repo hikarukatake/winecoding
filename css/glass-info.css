@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.text-line {
+  align-items: center;
+}
+
+.text-line:before,
+.text-line:after {
+  content: "";
+  flex-grow: 1;
+  height: 0.5px;
+  background: #000;
+  margin: 5vw 2em;
+}
+
+.experience-text {
+  text-align: center;
+  font-size: 25px;
+}
+
+.experience-menu-img {
+  text-align: center;
+}
+
+.trip {
+  margin: 10vw 0;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.glass-experience {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.glass-ball {
+  margin-top: 8vw;
+}
+
+.sand-brast {
+  margin: 4vw 0;
+}
+
+.link-button {
+  color: blue;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  padding: 0.6vw 1.5vw;
+  background-color: #d9d9d9;
+  transition: all 0.2s 0s ease-in-out;
+}
+
+.link-button:hover {
+  background-color: #c2c2c2;
+  color: #052982;
+  border-color: #c2c2c2;
+}
+
+.link-text {
+  text-decoration: none;
+  margin-top: 3vw;
+  text-align: center;
+}
+
+.head-img {
+    width: 100%;
+    margin-bottom: 10vw;
+}

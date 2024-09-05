@@ -1,0 +1,118 @@
+/* 左右に横線 */
+.menu-title {
+    margin: 120px;
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+    justify-content: center; /* 文字を中央寄せ */
+}
+.menu-title::before,
+.menu-title::after {
+    background-color: black; /* 横線の色 */
+    content: "";
+    height: 1px; /* 横線の高さ */
+    width: 300px; /* 横線の長さ */
+}
+.menu-title::before {
+    margin-right: 15px; /* 文字との余白 */
+}
+.menu-title::after {
+    margin-left: 15px; /* 文字との余白 */
+}
+/* ================================================== */
+.menu-img{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-img{
+    width: 450px;
+    height: 500px;
+}
+
+.flex-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* =================================================== */
+.margin{
+    width: 70%;
+    margin: 30px auto;
+    background-color: #EAFEFE;
+}
+
+.set-table{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.set-table table{
+    width: 100%;
+    text-align: center;
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.set-table th , td{
+    border: solid 1px black;
+    height: 60px;
+}
+
+.attention{
+    color: red;
+}
+
+/* ========================================================== */
+.plan-flex{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 150px auto;
+}
+
+.plan-img{
+    width: 200px;
+    height: 200px;
+}
+
+.plan-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.plan-img p{
+    text-align: center;
+}
+
+
+/* ========================================================== */
+.party-table{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.party-table table{
+    width: 100%;
+    text-align: center;
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.party-table th , td{
+    border: solid 1px black;
+    height: 60px;
+}

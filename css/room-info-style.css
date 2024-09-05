@@ -22,7 +22,7 @@ body{
 }
 
 .price span{
-    padding-left: 70px;
+    padding-left: 150px;
 }
 
 .price ul{
@@ -31,5 +31,6 @@ body{
 
 .price li{
     list-style: none;
+    border-bottom: 1px black solid;
 }
 
