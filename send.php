@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_COOKIE[session_name()])) {
             setcookie(session_name(), '', time() - 1800);
         }
-        $ok = "送信に成功しました！！５秒後に戻ります！！";
+        $ok = "送信が完了しました";
         // 3)セッションのファイル(サーバー上にあるファイル)を削除する
         session_destroy();
     } else {
@@ -103,44 +103,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <div class="back1">
-        <div class="idea2">
-            <ul>
-
-                <span>
-                    <img src="img/ルイージ.webp" class="mario fwari yoko" alt="">
-                </span>
-            </ul>
-        </div>
-        <div class="idea">
-            <ul>
-                <li>
-                    <span>
-                        <img class="noko spin" src="img/kuppa.webp" alt="">
-                        <img class="noko spin" src="img/send/図1.png" alt="">
-                        <img class="noko spin" src="img/send/図2.png" alt="">
-                        <img class="noko spin" src="img/f.webp" alt="">
-                    </span>
-                </li>
-            </ul>
-        </div>
-        <div class="animal">
-            <ul>
-                <li>
-                    <span class="s">
-                        <img class="do d1" src="img/send/nakama7.png" alt="">
-                        <img class="do d2" src="img/send/nakama1.png" alt="">
-                        <img class="do d3" src="img/send/nakama2.png" alt="">
-                        <img class="do d4" src="img/send/nakama3.png" alt="">
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </div>
     <h1><?php echo $ok; ?></h1>
-    <img class="damage" src="img/send/damage1.png" alt="">
-    <img class="block" src="img/send/block.png" alt="">
-    <meta http-equiv="Refresh" content="20; url=http://localhost/php_demo/%E3%83%AF%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA/winecoding/index.html">
+    <div class="border"></div>
+    <h3>メッセージが送信されましたありがとうございます。<br>５秒後に戻ります。</h3>
+    <meta http-equiv="Refresh" content="5; url=http://localhost/php_demo/%E3%83%AF%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA/winecoding/index.html">
+
 </body>
 
 </html>
