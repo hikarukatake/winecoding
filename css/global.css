@@ -32,6 +32,47 @@ header {
   align-items: center;
 }
 
+.breadcrumb-001 {
+  display: flex;
+  gap: 0 22px;
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.breadcrumb-001 li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-001 li:not(:last-child)::after {
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 0.3em;
+  height: 0.3em;
+  margin-left: 10px;
+  border-top: 1px solid #383838;
+  border-right: 1px solid #383838;
+  content: "";
+}
+
+.breadcrumb-001 a {
+  color: #3d18c3;
+  text-decoration: none;
+}
+
+.breadcrumb-001 {
+  margin: 10px 30px 10px 30px;
+}
+
+.breadcrumb-001 {
+  display: flex;
+  gap: 0 22px;
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+}
+
 .text-bold {
   font-weight: bold;
 }
