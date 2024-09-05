@@ -18,11 +18,13 @@
 
 .room-info h2{
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .price{
     width: 50%;
-    margin: 0 auto;
+    margin: 100px auto;
     border: solid 1px black;
 }
 
@@ -47,4 +49,3 @@
     list-style: none;
     border-bottom: 1px black solid;
 }
-

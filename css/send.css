@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+html {
+    background-color: #ecece7;
+}
+
+.border {
+    width: 20%;
+    border-bottom: skyblue solid 3px;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+h3{
+    margin-top: 70px;
+    text-align: center;
+}

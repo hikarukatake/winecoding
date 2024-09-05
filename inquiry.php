@@ -45,18 +45,16 @@ $email2 = isset($_SESSION['email2']) ? $_SESSION['email2'] : "";
             <img src="img/img.png" alt="トップイメージ" class="main-img" />
             <div class="gnavi__wrap">
                 <ul class="gnavi__lists">
-                    <li class="gnavi__list"><a href="#">イベント　　</a></li>
-
                     <li class="gnavi__list">
                         <a href="#">施設紹介　　</a>
                         <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="#">ホテルベルンドルフ</a></li>
-                            <li class="dropdown__list"><a href="#">レストランベルンドルフ</a></li>
-                            <li class="dropdown__list"><a href="#">ガラス体験工房　もりの国</a></li>
+                            <li class="dropdown__list"><a href="room-info.html">ホテルベルンドルフ</a></li>
+                            <li class="dropdown__list"><a href="menu.html">レストランベルンドルフ</a></li>
+                            <li class="dropdown__list"><a href="glass-info.html">ガラス体験工房　もりの国</a></li>
                         </ul>
                     </li>
 
-                    <li class="gnavi__list"><a href="#">会社概要　　</a></li>
+                    <li class="gnavi__list"><a href="Company-Profile.html">会社概要　　</a></li>
                     <li class="gnavi__list"><a href="#">お問い合わせ</a></li>
                 </ul>
             </div>
@@ -102,6 +100,13 @@ $email2 = isset($_SESSION['email2']) ? $_SESSION['email2'] : "";
             </div>
         </div>
     </form>
+    <footer>
+        <div class="out-info">
+            <p class="company-info">株式会社エーデルワイン・サポート</p>
+            <p class="company-info">〒028-3203　　岩手県花巻市大迫町大迫10-16-1</p>
+            <p class="company-info">TEL: 0198-48-2155</p>
+        </div>
+    </footer>
 </body>
 
 </html>
