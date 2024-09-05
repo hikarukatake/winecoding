@@ -20,6 +20,7 @@ header {
     top: 0;
     left: 0;
     background-color: #c8e7ff;
+    z-index: 100;
 }
 
 .header {
@@ -62,6 +63,10 @@ a {
 
 
 /* 普通のヘッダーボタンについて */
+
+.gnavi__wrap .gnavi__lists{
+    margin: 0;
+}
 
 .gnavi__wrap {
     margin: 3vw;
