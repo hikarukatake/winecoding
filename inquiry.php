@@ -48,7 +48,7 @@ $email2 = isset($_SESSION['email2']) ? $_SESSION['email2'] : "";
                     <li class="gnavi__list">
                         <a href="#">施設紹介　　</a>
                         <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="room-info.html">ホテルベルンドルフ</a></li>
+                            <li class="dropdown__list"><a href="Facility-introduction.html">ホテルベルンドルフ</a></li>
                             <li class="dropdown__list"><a href="menu.html">レストランベルンドルフ</a></li>
                             <li class="dropdown__list"><a href="glass-info.html">ガラス体験工房　もりの国</a></li>
                         </ul>
