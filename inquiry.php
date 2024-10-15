@@ -6,6 +6,7 @@ $errors = [
     "name" => "",
     "email" => "",
     "email2" => "",
+    "message" => "",
 ];
 
 // エラーが起こっていたら表示する
@@ -13,12 +14,17 @@ if (isset($_SESSION["errors"])) {
     $errors["name"] = isset($_SESSION["errors"]["name"]) ? $_SESSION["errors"]["name"] : "";
     $errors["email"] = isset($_SESSION["errors"]["email"]) ? $_SESSION["errors"]["email"] : "";
     $errors["email2"] = isset($_SESSION["errors"]["email2"]) ? $_SESSION["errors"]["email2"] : "";
+    $errors["message"] = isset($_SESSION["errors"]["message"]) ? $_SESSION["errors"]["message"] : "";
 }
 
 // send.phpに送ったnameを$nameに入れて戻ってきたときに同じ値を表示するための処理
 $name = isset($_SESSION['name']) ? $_SESSION['name'] : "";
 $email = isset($_SESSION['email']) ? $_SESSION['email'] : "";
 $email2 = isset($_SESSION['email2']) ? $_SESSION['email2'] : "";
+$message = isset($_SESSION['message']) ? $_SESSION['message'] : "";
+$tell = isset($_SESSION['tell']) ? $_SESSION['tell'] : "";
+
+
 
 
 
@@ -74,27 +80,28 @@ $email2 = isset($_SESSION['email2']) ? $_SESSION['email2'] : "";
         <div class="white">
             <div class="Form">
                 <div class="Form-Item">
-                    <p class="Form-Item-Label">お名前</p>
-                    <input type="text" name="name" class="Form-Item-Input" value="<?php echo $name ?>">
+                    <p class="Form-Item-Label">お名前<span>*</span></p>
+                    <input type="text" name="name" class="Form-Item-Input" value="<?php echo $name ?>" placeholder="">
                     <p class="err"><?php echo $errors["name"]; ?></p>
                 </div>
                 <div class="Form-Item">
-                    <p class="Form-Item-Label mail">メールアドレス</p>
+                    <p class="Form-Item-Label mail">メールアドレス<span>*</span></p>
                     <input type="email" name="email" class="Form-Item-Input" value="<?php echo $email ?>">
                     <p class="err"><?php echo $errors["email"]; ?></p>
                 </div>
                 <div class="Form-Item">
-                    <p class="Form-Item-Label mail" style="width: 100%;">メールアドレス確認用</p>
+                    <p class="Form-Item-Label mail">メールアドレス確認用<span>*</span></p>
                     <input type="email" name="email2" class="Form-Item-Input" value="<?php echo $email2 ?>">
                     <p class="err"><?php echo $errors["email2"]; ?></p>
                 </div>
                 <div class="Form-Item">
-                    <p class="Form-Item-Label">電話番号</p>
-                    <input type="text" name="tell" class="Form-Item-Input">
+                    <p class="Form-Item-Label" >電話番号</p>
+                    <input type="text" name="tell" class="Form-Item-Input" value="<?php echo $tell ?>">
                 </div>
                 <div class="Form-Item">
-                    <p class="Form-Item-Label isMsg box">お問い合わせ内容</p>
-                    <textarea class="Form-Item-Textarea" name="message"></textarea>
+                    <p class="Form-Item-Label isMsg box">お問い合わせ内容<span>*</span></p>
+                    <textarea class="Form-Item-Textarea" name="message"><?php echo $message?></textarea>
+                    <p class="err"><?php echo $errors["message"]; ?></p>
                 </div>
                 <input type="submit" class="Form-Btn" value="送信する">
             </div>
